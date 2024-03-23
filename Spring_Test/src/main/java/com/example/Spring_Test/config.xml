@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <context:annotation-config />
+
+    <!--First Way-->
+<!--    <bean class="com.example.Spring_Test.Student" name ="Student">-->
+<!--        <property name="id">-->
+<!--            <value>101</value>-->
+<!--        </property>-->
+<!--        <property name="name">-->
+<!--            <value>Sohan</value>-->
+<!--        </property>-->
+<!--        <property name="address">-->
+<!--            <value>Indore</value>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    Second Way-->
+    <bean class="com.example.Spring_Test.Student" name ="Student">
+        <property name="id" value="201"/>
+        <property name="name" value="Rohan"/>
+        <property name="address" value="Indore"/>
+    </bean>
+
+<!--    Third Way-->
+<!--    <bean class="com.example.Spring_Test.Student" name ="Student" p:studentId ="1001" p:studentName ="Mohan" p:studentAddress ="Aml"/>-->
+</beans>
