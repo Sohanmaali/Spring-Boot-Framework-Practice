@@ -30,4 +30,11 @@
 
 <!--    Third Way-->
 <!--    <bean class="com.example.Spring_Test.Student" name ="Student" p:studentId ="1001" p:studentName ="Mohan" p:studentAddress ="Aml"/>-->
+
+<!--======================================================================-->
+    <bean class="com.example.Spring_Test.autowiredTest.Address" name="address">
+        <property name="street" value="Indore"/>
+        <property name="pincode" value="123456"/>
+    </bean>
+    <bean class="com.example.Spring_Test.autowiredTest.Student" name="student" autowire="byName"/>
 </beans>

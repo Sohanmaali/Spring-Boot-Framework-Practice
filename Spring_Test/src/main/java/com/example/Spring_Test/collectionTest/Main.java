@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("com/example/Spring_Test/collectionTest/collection.xml");
-//        com/example/Spring_Test/config.xml
+//        com/example/Spring_Test/autowired.xml
         Employee emp = (Employee) context.getBean("Employee");
         System.out.println(emp.getName());
         System.out.println(emp.getAddress());
