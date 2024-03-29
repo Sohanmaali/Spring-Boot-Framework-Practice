@@ -14,6 +14,12 @@ import jakarta.persistence.Table;*/
 @Table(name = "student_data")
 public class Student {
 
+	@Override
+	public String toString() {
+		return "Student [studentId=" + studentId + ", studentName=" + studentName + ", studentCity=" + studentCity
+				+ "]";
+	}
+
 	@Id
 	@Column(name = "student_Id")
 	private int studentId;
