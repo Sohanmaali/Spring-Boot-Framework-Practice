@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+
+	<bean class="springCore.container.Student" id ="student" name="student3 student1 student2" init-method="init" destroy-method="destroy" >
+		<property name="name" value="sohan" />
+		<property name="roll" value="102" />
+		<property name="mark" value="100" />
+	</bean>
+	<alias name="student" alias="st"/>
+</beans>
+
+

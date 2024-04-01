@@ -31,7 +31,7 @@ public class Address {
 	}
 	@Override
 	public String toString() {
-		return "Address [street=" + street + ", pincode=" + pincode + "]";
+		return "Address [street = " + street + ", pincode = " + pincode + "]";
 	}
 	
 	

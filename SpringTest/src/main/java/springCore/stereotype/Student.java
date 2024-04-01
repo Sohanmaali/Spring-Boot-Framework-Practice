@@ -37,7 +37,7 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", address=" + address + ", list=" + list + "]";
+		return "Student [name = " + name + ", address = " + address + ", list = " + list + "]";
 	}
 	
 }
