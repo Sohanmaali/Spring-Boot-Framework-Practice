@@ -1,4 +1,4 @@
-package springmvc.controller;
+package com.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ public class HomeController {
 	@RequestMapping("/help")
 	public ModelAndView help() {
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("name","rajesh");
+		modelAndView.addObject("name", "rajesh");
 		modelAndView.setViewName("help");
 		return modelAndView;
 	}

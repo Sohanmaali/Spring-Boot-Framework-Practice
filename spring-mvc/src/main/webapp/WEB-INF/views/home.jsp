@@ -7,12 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>this is help page</h1>
-	<h1>call by controller</h1>
-	
-	<h1>
-		My Name is
-		<%=(String) request.getAttribute("name")%>
-	</h1>
+	<h1>sohan maali</h1>
 </body>
 </html>

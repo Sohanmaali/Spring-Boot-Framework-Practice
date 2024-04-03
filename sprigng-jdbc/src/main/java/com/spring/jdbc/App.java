@@ -20,8 +20,8 @@ public class App
         
         StudentDao stdao = context.getBean("studentDaoImp",StudentDao.class);
         Student st =  new Student();
-        st.setId(101);
-        st.setName("Ankit");
+        st.setId(102);
+        st.setName("Ankita");
         st.setCity("Indore");
         int i =  stdao.insert(st);
         System.out.println("Row Efected = "+ i );
