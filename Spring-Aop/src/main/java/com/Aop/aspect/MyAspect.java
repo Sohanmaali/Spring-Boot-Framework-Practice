@@ -4,7 +4,7 @@ import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 @Aspect
-@Component
+//@Component
 public class MyAspect {
 
 //	@Before("execution(* com.Aop.services.payment())")
