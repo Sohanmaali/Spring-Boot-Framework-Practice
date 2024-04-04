@@ -1,22 +1,16 @@
 package com.Aop;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.Aop.services.PaymentServicImp;
+import com.Aop.services.Student;
 
-/**
- * Hello world!
- *
- */
-
-// MyAspect @Component
 public class App {
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
-		System.out.println("2");
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/Aop/config.xml");
-		PaymentServicImp py = context.getBean("paymentServicImp", PaymentServicImp.class);
-		py.payment(20);
+		System.out.println("Hello Word");
+		ApplicationContext context = new AnnotationConfigApplicationContext(ConfigFile.class);
+
+		Student py = context.getBean("student", Student.class);
+		py.studay();
 	}
 }
