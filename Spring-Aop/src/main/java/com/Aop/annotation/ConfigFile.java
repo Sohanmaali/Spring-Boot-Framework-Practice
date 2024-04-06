@@ -1,10 +1,8 @@
-package com.Aop;
+package com.Aop.annotation;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import com.Aop.services.Student;
 
 @Configuration
 @ComponentScan(basePackages = "com.Aop")

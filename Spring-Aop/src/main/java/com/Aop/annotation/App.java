@@ -1,9 +1,9 @@
-package com.Aop;
+package com.Aop.annotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.Aop.services.Student;
+import com.Aop.annotation.services.*;
 
 public class App {
 	public static void main(String[] args) {
@@ -12,5 +12,6 @@ public class App {
 
 		Student py = context.getBean("student", Student.class);
 		py.studay();
+		System.out.println("All clear.......");
 	}
 }

@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>sohan maali</h1>
+	<h1>HOME PAGE</h1>
 </body>
 </html>
