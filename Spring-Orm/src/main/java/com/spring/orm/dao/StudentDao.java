@@ -2,9 +2,9 @@ package com.spring.orm.dao;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
 
 import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.spring.orm.entites.Student;
 
@@ -32,7 +32,7 @@ public class StudentDao {
 		this.hibernateTemplate = hibernateTemplate;
 	}
 
-	@javax.transaction.Transactional
+	@Transactional
 	public int insertData(Student st) {
 		return (Integer) this.hibernateTemplate.save(st);
 	}
