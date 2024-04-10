@@ -18,7 +18,7 @@ public class App {
 
 		StudentDao std = context.getBean("studentDao", StudentDao.class);
 
-		Student st = new Student(1, "raj", "indore");
+		Student st = new Student(10, "raj", "indore");
 
 		int i = std.insertData(st);
 		System.out.println("Row Effected " + i);

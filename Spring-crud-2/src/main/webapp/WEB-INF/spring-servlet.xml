@@ -23,7 +23,7 @@
 
 	<mvc:annotation-driven />
 	<tx:annotation-driven />
-	<context:component-scan base-package="com.mvc" />
+	<context:component-scan base-package="com.crud" />
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		name="viewResolver">
@@ -61,7 +61,7 @@
 
 		<property name="annotatedClasses">
 			<list>
-				<value>com.mvc.entites.Product</value>
+				<value>com.crud.entities.Product</value>
 			</list>
 		</property>
 	</bean>
@@ -71,25 +71,9 @@
 		<property name="sessionFactory" ref="factory" />
 	</bean>
 
-	<!-- <bean name="stDao" class="com.orm.dao.StudentDao"> <property name="hibernateTemplate" 
-		ref="template" /> </bean> -->
-
 	<bean name="transactionManager"
 		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
 		<property name="sessionFactory" ref="factory" />
 	</bean>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </beans>

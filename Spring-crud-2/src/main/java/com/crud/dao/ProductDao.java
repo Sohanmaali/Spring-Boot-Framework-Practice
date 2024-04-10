@@ -1,14 +1,13 @@
-package com.mvc.dao;
+package com.crud.dao;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.mvc.entites.Product;
+import com.crud.entities.*;
 
 @Component
 public class ProductDao {
@@ -36,9 +35,9 @@ public class ProductDao {
 
 //	========================================================================================================
 	@Transactional
-	public int addProduct(Product product) {
+	public void addProduct(Product product) {
 
-		return (Integer) this.hibernateTemplate.save(product);
+		this.hibernateTemplate.saveOrUpdate(product);
 	}
 
 	@Transactional
@@ -66,4 +65,9 @@ public class ProductDao {
 		return products;
 	}
 
+	@Transactional
+	public void updateProduct(Product product) {
+
+		this.hibernateTemplate.update(product);
+	}
 }
